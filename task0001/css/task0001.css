@@ -2,17 +2,78 @@ h1
 {
 	color: blue;
 }
-
 h2
 {
 	font-size: 14px;
 }
-#p1
-{
-	font-size: 12px;
-	color: yellow;
-	background-color: black;
+li#tt1{
+	text-indent: 10px;/*首行缩进*/
+	text-transform:uppercase;/*大小写转换*/
+	text-decoration:overline;/*文本装饰*/
+	word-spacing:40px;/*单词间距*/
+	text-align:left;/*对齐方式*/
+	line-height:900%;/*行高*/
 }
+li#tt2{
+	text-transform:capitalize;
+	text-decoration:underline;
+	text-align:center;
+}
+li#tt3{
+	text-transform:lowercase;
+	text-decoration:line-through;
+	text-align:right;
+}
+li#tt4{
+	text-transform:blink;
+}
+li#ws1
+{
+	white-space:nowrap;/*如何处理元素空白，文本不会换行,文本会在在同一行上继续，直到遇到 <br> 标签为止
+	*/
+	opacity:0.5;/*透明度0.5*/
+}
+li#ws2
+{
+	white-space:pre;
+}
+li#ws3
+{
+	white-space:pre-wrap;
+}
+li#ws4
+{
+	text-decoration:blink;
+	white-space:pre-line;
+}
+li#f1
+{
+	font-style:italic;
+	font-weight:bold;/*字体粗细，100-900*/
+}
+li#f2
+{
+	font-style:oblique;
+	font-weight:lighter;
+}li#f3
+{
+	font-variant:small-caps;
+	font-weight:900;
+}
+li#f4
+{
+	font-size:50%;
+	line-height:90%;
+	font-family:"Times New Roman",Georgia,Serif;
+	font:caption;
+}
+li#f5
+{
+	font:caption;
+}
+
+
+
 img
 {
 	border:solid red 2px;
