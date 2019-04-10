@@ -67,19 +67,14 @@ li#f4
 	font-family:"Times New Roman",Georgia,Serif;
 	font:caption;
 }
+/*自定义字体*/
+@font-face
+{
+font-family: myFirstFont;
+src: url('./font/lajixinti.ttf')
+    ,url('./font/lajixinti.ttf'); /* IE9+ */
+}
 li#f5
 {
-	font:caption;
-}
-
-
-
-img
-{
-	border:solid red 2px;
-	/*
-	border-style:solid;
-	border-color: red;
-	border-width: thin 10px 10px 10px 10px;/*必须设置border-style,否则width默认为0*/
-	*/
+	font-family:myFirstFont;
 }
