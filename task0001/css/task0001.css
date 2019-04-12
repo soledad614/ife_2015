@@ -5,6 +5,11 @@ h1
 h2
 {
 	font-size: 14px;
+	color:green;
+}
+h3
+{
+	font-size: 14px;
 }
 li#tt1{
 	text-indent: 10px;/*首行缩进*/
@@ -67,7 +72,7 @@ li#f4
 	font-family:"Times New Roman",Georgia,Serif;
 	font:caption;
 }
-/*自定义字体*/
+/*1、自定义字体*/
 @font-face
 {
 font-family: myFirstFont;
@@ -78,3 +83,201 @@ li#f5
 {
 	font-family:myFirstFont;
 }
+/*2、水平居中*/
+/*a、margin和width实现*/
+div#red-box
+{
+	border:1px solid red;
+	background-color:red;
+	width:60px;
+	margin-left: auto; 
+	margin-right: auto;
+}
+
+/*b、inline-block实现水平居中方法,注意父类元素需要设置text-line
+div#father-box
+{
+	text-align:center;	
+}
+div#red-box
+{
+	border:1px solid red;
+	background-color:red;
+	width:60px;
+	display:inline-block;  inline-block需要处理浏览器兼容性
+}
+
+c、浮动实现水平居中的方法
+
+div#father-box
+{
+	float:left;
+	width: 100%;
+	position: relative;
+}
+div#red-box
+{
+	border:1px solid red;
+	background-color:red;
+	width:60px;
+	
+	float:left;
+	left:50%;
+	position: relative;
+}
+
+d、绝对定位实现水平居中
+
+div#father-box
+{
+	position: relative;
+}
+div#red-box
+{
+	border:1px solid red;
+	background-color:red;
+	width:60px;
+	
+	position:absolute;
+	left:50%;
+	position: relative;
+}
+e、CSS3的flex实现水平居中方法
+https://www.w3cplus.com/css/elements-horizontally-center-with-css.html */
+
+/*2、不使用border-radius的情况下实现一个可复用的高度和宽度都自适应的圆角矩形*/
+div.set-border{
+	margin-top:20px;
+}
+.top1,.bottom1{
+	margin:0px 40px;
+	height:10px;
+	background:blue;
+}
+.top2,.bottom2{
+	margin:0px 20px;
+	height:10px;
+	border-left: solid 20px red;
+	border-right: solid 20px red;
+}
+.top3,.bottom3{	
+	margin:0px 10px;
+	height:20px;
+	border-left: solid 10px green;
+	border-right: solid 10px green;
+}
+div.main{
+	border-left: solid 10px black;
+	border-right: solid 10px black;
+}
+#info{
+	margin:0px 10px;
+}
+/*3、左框随浏览器宽度变化而变化*/
+/*a、使用margin-left实现*/
+/*
+div.div-a{
+	float:left;
+	width:200px;
+	height:100px;
+	background:red;
+}
+div.div-b{
+	margin-left:200px;
+	height:100px;
+	background:blue;
+}
+*/
+/*b、使用float+绝对位置实现*/
+div.div-a{
+	float:left;
+	width:200px;
+	height:100px;
+	background:red;
+}
+div.div-b{
+	position:absolute;
+	left:200px;
+	height:100px;
+	width:100%;
+	background:blue;
+}
+div.clear{ 
+	clear:both
+}
+/*4、用两种不同的方式来实现一个三列布局，其中左侧和右侧的部分宽度固定，中间部分宽度随浏览器宽度的变化而自适应变化*/
+/*a、使用float+margin-right*/
+/*
+div.div-l{
+	float:left;
+	width:200px;
+	height:100px;
+	background:red;
+}
+div.div-m{
+	background:blue;
+	height:100px;
+	margin-right:200px;
+}
+div.div-r{
+	float:right;
+	width:200px;
+	height:100px;
+	background:green;
+}
+*/
+/*b、使用float+相对位置*/
+div.div-l{
+	float:left;
+	width:200px;
+	height:100px;
+	background:red;
+}
+div.div-m{
+	left:200px;
+	right:200px;
+	height:100px;
+	width:100%;
+	background:blue;
+}
+div.div-r{
+	float:right;
+	width:200px;
+	height:100px;
+	background:green;
+}
+/*4、实现一个浮动布局，红色容器中每一行的蓝色容器数量随着浏览器宽度的变化而变化*/
+div.red-block{
+	background:red;
+}
+div.blue-block{
+	margin:10px 10px;
+	float:left;
+	background-color:blue;
+	height:80px;
+	width:100px;
+}
+
+.grid-s5m0e5 { 
+	width:100%;
+}
+.grid-s5m0e5 .col-main { 
+	float:left; 
+	width:100%; 
+	min-height:30px; 
+	background:#000; 
+}
+.col-sub { 
+	float:left; 
+	width:190px; 
+	min-height:30px; 
+	background:#f00; margin-left:-100%; 
+}
+.col-extra { 
+	float:left; 
+	width:190px; 
+	min-height:30px; 
+	background:#00f; margin-left:-190px; 
+}
+
+

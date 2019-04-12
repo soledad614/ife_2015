@@ -34,6 +34,58 @@
 			<li id="f4">字体大小50%，行高90%，字体Times New Roman</li>
 			<li id="f5">自定义字体</li>
 		</ul>
+		
+		<h2>盒模型与定位</h2>
+		<h3>1、居中实现</h3>
+			<div id="father-box">
+				<div id="red-box"></div>
+			</div>	
+		<h3>2、不使用border-radius的情况下实现一个可复用的高度和宽度都自适应的圆角矩形</h3>
+			<div class="set-border">
+				<div class="top1"></div>
+				<div class="top2"></div>
+				<div class="top3"></div>
+				<div class="main">
+					<p id="info">自适应大小，自适应大小，自适应大小，自适应大小，自适应大小，自适应大小，自适应大小，自适应大小，自适应大小，自适应大小，自适应大小，自适应大小，自适应大小，自适应大小，自适应大小，自适应大小，自适应大小，自适应大小，自适应大小，自适应大小，自适应大小，自适应大小，自适应大小，自适应大小，自适应大小</p>
+					</div>
+				<div class="bottom3"></div>
+				<div class="bottom2"></div>
+				<div class="bottom1"></div>
+			</div>
+
+		<h3>3、用两种不同的方法来实现一个两列布局，其中左侧部分宽度固定、右侧部分宽度随浏览器宽度的变化而自适应变化 </h3>
+		<div>
+			<div class="div-a"></div>
+			<div class="div-b"></div>
+			<!--清除div-a的float以免遮住之后的div-->
+			<div class="clear"></div>
+		</div>
+		<h3>4、用两种不同的方式来实现一个三列布局，其中左侧和右侧的部分宽度固定，中间部分宽度随浏览器宽度的变化而自适应变化 </h3>
+		<div>
+			<div class="div-l"></div>
+			<div class="div-r"></div>
+			<div class="div-m"></div>
+		</div>
+			
+		<h3>4、实现一个浮动布局，红色容器中每一行的蓝色容器数量随着浏览器宽度的变化而变化  </h3>	
+		<div class="red-block">
+			<div class="blue-block"></div>
+			<div class="blue-block"></div>
+			<div class="blue-block"></div>
+			<div class="blue-block"></div>
+			<div class="blue-block"></div>
+			<div class="blue-block"></div>
+			<div class="blue-block"></div>
+			<div class="blue-block"></div>
+			<div class="blue-block"></div>
+			<div class="clear"></div>
+		</div>
+		<h3>5、淘宝双飞翼布局  </h3>	
+		<div class="grid-s5m0e5">
+　　		<div class="col-main">我是主列</div>
+		　　<div class="col-sub">我是子列</div><br>　　
+			<div class="col-extra">我是附加列</div>
+		</div>
 	</body>
 
 </html>
